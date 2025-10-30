@@ -12,11 +12,12 @@ h1, h2, h3, h4, h5, h6 {
 .navbar, .nav {
   .nav-link {
     font-weight: 700;
+    border: 0 !important;
+    border-bottom: 5px solid $orange !important;
 
     &.active,
     &:hover {
-      border: 0 !important;
-      border-bottom: 5px solid $orange !important;
+      border-bottom-color: $orange !important;
     }
   }
 }
