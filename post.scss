@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6 {
   .nav-link {
     font-weight: 700;
     border: 0 !important;
-    border-bottom: 5px solid $orange !important;
+    border-bottom: 5px solid transparent !important;
 
     &.active,
     &:hover {
