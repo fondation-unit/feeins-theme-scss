@@ -1,0 +1,60 @@
+$domain: "https://[ DOMAIN NAME ]";
+
+// Colors
+$primary: #612b93;
+$secondary: #dbdbff;
+$success: #198754;
+$success-bg-subtle: $success;
+$success-text-emphasis: #fff;
+$warning: #ff6633;
+$orange: #ff6633;
+$dark: #000021;
+$body-color: #000033;
+$border-color: #707070;
+
+// Borders
+$border-radius: 0;
+$border-radius-sm: 0;
+$border-radius-lg: 0;
+$border-radius-xl: 0;
+$border-radius-xxl: 0;
+$border-radius-pill: 4px;
+
+// Fonts
+@font-face {
+  font-family: 'PlusJakartaSans-Regular';
+  src: url("#{$domain}/pluginfile.php/1/theme_boost_union/customfonts/0/PlusJakartaSans-Regular.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PlusJakartaSans-ExtraBold';
+  src: url("#{$domain}/pluginfile.php/1/theme_boost_union/customfonts/0/PlusJakartaSans-ExtraBold.ttf") format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+// Mixins
+@mixin course-box {
+  border-color: $primary !important;
+  position: relative !important;
+  &::after {
+    content: "";
+    width: 8px;
+    height: 90%;
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    right: -14px;
+    background-color: $primary;
+  }
+  .coursename {
+    font-size: 1.25rem;
+    a {
+      color: $body-color !important;
+      font-weight: 700;
+    }
+  }
+}
